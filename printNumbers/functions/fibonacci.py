@@ -23,17 +23,11 @@ def FibonacciRecursion(n):
     '''
     Helper function.
     '''
-    if n <= 1:
-        return n
-    else:
-        return (FibonacciRecursion(n - 1) + FibonacciRecursion(n - 2))
+    return n if n <= 1 else (FibonacciRecursion(n - 1) + FibonacciRecursion(n - 2))
 
 def FibonacciSequence(n):
     '''
     :param n:   Operand
     :return:    fib(n) as list of fibonacci numbers, [0, 1, 1, 2, ... ]
     '''
-    sequence = []
-    for i in range(n):
-        sequence.append(FibonacciRecursion(i))
-    return (sequence)
+    return [FibonacciRecursion(i) for i in range(n)]

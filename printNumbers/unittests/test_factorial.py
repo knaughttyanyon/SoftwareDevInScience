@@ -45,8 +45,7 @@ class TestFactorial(unittest.TestCase):
 
 
 def suite():
-    suite = unittest.makeSuite(TestFactorial, 'test')
-    return suite
+    return unittest.makeSuite(TestFactorial, 'test')
 
 def run():
     runner = unittest.TextTestRunner(verbosity = 2)
