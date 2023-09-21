@@ -35,6 +35,7 @@ Options:
   --factorial     Print the factorial.
 """
 
+
 from docopt import docopt
 from parameters import *
 from functions.fibonacci import *
@@ -64,6 +65,6 @@ if __name__ == '__main__':
 
     # Print results depending on the executed function.
     if params.functionIndex == CONST_FUNC_CODE_FIBONACCI:
-        print('fib(' + str(params.operand) + ') =', result)
+        print(f'fib({str(params.operand)}) =', result)
     elif params.functionIndex == CONST_FUNC_CODE_FACTORIAL:
-        print(str(params.operand) + '! =', str(result))
+        print(f'{str(params.operand)}! =', result)

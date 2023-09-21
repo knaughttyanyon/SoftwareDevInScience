@@ -42,8 +42,7 @@ class TestFibonacci(unittest.TestCase):
 
 
 def suite():
-    suite = unittest.makeSuite(TestFibonacci, 'test')
-    return suite
+    return unittest.makeSuite(TestFibonacci, 'test')
 
 def run():
     runner = unittest.TextTestRunner(verbosity = 2)
